@@ -16,5 +16,23 @@ namespace PlanetMission
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Mars mars = new Mars();
+            MessageBox.Show(mars.FuelNeeded());
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Venus venus = new Venus();
+            MessageBox.Show(venus.FuelNeeded());
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            PlanetMission planet = new PlanetMission();
+            MessageBox.Show(planet.FuelNeeded());
+        }
     }
 }
